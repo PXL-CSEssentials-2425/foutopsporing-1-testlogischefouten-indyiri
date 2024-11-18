@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Margin="125,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Margin="21,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="356" Height="281" VerticalScrollBarVisibility="Visible"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="400,70,0,0" VerticalAlignment="Top" Width="65" Click="startButton_Click"/>
+        <Button x:Name="start2Button" Content="Start2" HorizontalAlignment="Left" Margin="400,104,0,0" VerticalAlignment="Top" Width="65" Click="start2Button_Click"/>
+        <Label Content="Geef het getal:" HorizontalAlignment="Left" Margin="21,67,0,0" VerticalAlignment="Top" Width="90"/>
+        <Button x:Name="startCorrectButton" Content="Start goed" HorizontalAlignment="Left" Height="24" Margin="400,138,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button x:Name="clearButton" Content="Opnieuw" HorizontalAlignment="Left" Margin="400,177,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button x:Name="closeButton" Content="Sluiten" HorizontalAlignment="Left" Margin="400,217,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button x:Name="showImageButton" Content="Toon beeld" HorizontalAlignment="Left" Margin="486,71,0,0" VerticalAlignment="Top" Width="82" Click="showImageButton_Click"/>
+        <Button x:Name="showImageWithCheckButton" Content="Toon beeld &#xD;&#xA;met controle" HorizontalAlignment="Left" Margin="486,104,0,0" VerticalAlignment="Top" Width="82" Height="58"/>
+        <Image x:Name="showImage" HorizontalAlignment="Left" Height="139" Margin="486,187,0,0" VerticalAlignment="Top" Width="216"/>
 
     </Grid>
 </Window>

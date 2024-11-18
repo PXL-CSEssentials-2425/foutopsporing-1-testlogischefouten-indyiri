@@ -20,5 +20,104 @@ namespace H10Oef1TestLogischeFouten
         {
             InitializeComponent();
         }
+
+        Random random = new Random();
+
+        int randomImage;
+
+        private void startButton_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                int product = 0;
+
+                int counter = 1;
+
+                int number = 0;
+
+                resultTextBox.Text = "";
+
+                number = Convert.ToInt32(numberTextBox.Text);
+
+                while (product <= 1000 || counter <= 51)
+
+                {
+                    product = number * counter;
+
+                    resultTextBox.Text += $"{counter} x {number} = {product}\n";
+
+                    counter++;
+                }
+            }
+        }
+
+        private void start2Button_Click(object sender, RoutedEventArgs e)
+        {
+            int product = 0;
+
+            int counter = 1;
+
+            int number = 0;
+
+            resultTextBox.Text = "";
+
+            number = Convert.ToInt32(numberTextBox.Text);
+
+            while (product <= 1000 && counter <= 51)
+
+            {
+                resultTextBox.Text = resultTextBox.Text + counter.ToString() + " x " +
+
+                number.ToString() + " = " + product.ToString() + "\r\n";
+
+                counter++;
+
+            }
+        }
+
+        private void showImageButton_Click(object sender, RoutedEventArgs e)
+        {
+            randomImage = random.Next(0,10);
+
+            if (randomImage == 0)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee0.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 1)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee1.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 2)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee2.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 3)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee3.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 4)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee4.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 5)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee5.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 6)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee6.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 7)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee7.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 8)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee8.jpg", UriKind.Relative));
+            }
+            else if (randomImage == 9)
+            {
+                showImage.Source = new BitmapImage(new Uri("Images/zee9.jpg", UriKind.Relative));
+            }
+        }
     }
 }
